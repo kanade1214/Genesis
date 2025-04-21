@@ -1,0 +1,531 @@
+<?xml version="1.0" ?>
+<robot name="hapthexa" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find hapthexa_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find hapthexa_description)/urdf/hapthexa.trans" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.023482686234529128 0.009399208569724241 -0.030381180045183934" rpy="0 0 0"/>
+    <mass value="0.5111070184633425"/>
+    <inertia ixx="0.001015" iyy="0.001772" izz="0.000909" ixy="3e-06" iyz="-1e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque555"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Coxa__4__1">
+  <inertial>
+    <origin xyz="0.019504685340380374 -0.012341676148518561 -0.03452353861717494" rpy="0 0 0"/>
+    <mass value="0.050011908854628584"/>
+    <inertia ixx="1.5e-05" iyy="1.1e-05" izz="1.5e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016517 -0.026286 0.099741" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Coxa__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016517 -0.026286 0.099741" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Coxa__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Coxa__2__1">
+  <inertial>
+    <origin xyz="0.039650915389736474 -0.012341676148518515 -0.0003698293133218289" rpy="0 0 0"/>
+    <mass value="0.050011908854628584"/>
+    <inertia ixx="1.5e-05" iyy="1.1e-05" izz="1.5e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.056517 -0.026286 0.030459" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Coxa__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.056517 -0.026286 0.030459" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Coxa__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Coxa__1__1">
+  <inertial>
+    <origin xyz="0.020283607961812552 -0.012341676148510491 0.03407168985837998" rpy="0 0 0"/>
+    <mass value="0.050011908854628584"/>
+    <inertia ixx="1.5e-05" iyy="1.1e-05" izz="1.5e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016517 -0.026286 -0.038824" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Coxa__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016517 -0.026286 -0.038824" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Coxa__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Coxa_1">
+  <inertial>
+    <origin xyz="-0.019504988441448892 -0.012439675760187565 0.03452349701588872" rpy="0 0 0"/>
+    <mass value="0.050011908854628584"/>
+    <inertia ixx="1.5e-05" iyy="1.1e-05" izz="1.5e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.063483 -0.026286 -0.038824" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Coxa_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="0.063483 -0.026286 -0.038824" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Coxa_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Coxa__5__1">
+  <inertial>
+    <origin xyz="-0.039651218490817194 -0.012341676148518447 0.0003707877120360213" rpy="0 0 0"/>
+    <mass value="0.050011908854628584"/>
+    <inertia ixx="1.5e-05" iyy="1.1e-05" izz="1.5e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.103483 -0.026286 0.030459" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Coxa__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="0.103483 -0.026286 0.030459" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Coxa__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Coxa__3__1">
+  <inertial>
+    <origin xyz="-0.020146381599897206 -0.01234167614851837 -0.034153230104497306" rpy="0 0 0"/>
+    <mass value="0.050011908854628584"/>
+    <inertia ixx="1.5e-05" iyy="1.1e-05" izz="1.5e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.063483 -0.026286 0.099741" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Coxa__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="0.063483 -0.026286 0.099741" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Coxa__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Femur__1__1">
+  <inertial>
+    <origin xyz="0.0415906312765175 0.010989309598100948 0.03363429654287885" rpy="0 0 0"/>
+    <mass value="0.02302342374104796"/>
+    <inertia ixx="9e-06" iyy="1.4e-05" izz="7e-06" ixy="-0.0" iyz="-0.0" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.02142 -0.002786 -0.084577" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Femur__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.02142 -0.002786 -0.084577" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Femur__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Femur_1">
+  <inertial>
+    <origin xyz="-0.008546088557166681 0.01098930959810179 0.052801094546086225" rpy="0 0 0"/>
+    <mass value="0.02302342374104796"/>
+    <inertia ixx="9e-06" iyy="1.4e-05" izz="7e-06" ixy="0.0" iyz="-0.0" ixz="2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.100764 -0.002686 -0.065797" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Femur_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="0.100764 -0.002686 -0.065797" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Femur_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Femur__5__1">
+  <inertial>
+    <origin xyz="-0.05000043554625219 0.010989309598091091 0.01900047909596079" rpy="0 0 0"/>
+    <mass value="0.02302342374104796"/>
+    <inertia ixx="5e-06" iyy="1.4e-05" izz="1e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.145483 -0.002786 0.049259" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Femur__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="0.145483 -0.002786 0.049259" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Femur__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Femur__3__1">
+  <inertial>
+    <origin xyz="-0.0414544985396066 0.010989309598090703 -0.033801136250771024" rpy="0 0 0"/>
+    <mass value="0.02302342374104796"/>
+    <inertia ixx="9e-06" iyy="1.4e-05" izz="7e-06" ixy="0.0" iyz="0.0" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.068202 -0.002786 0.145514" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Femur__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="0.068202 -0.002786 0.145514" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Femur__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Femur__4__1">
+  <inertial>
+    <origin xyz="0.008545785456105369 0.01098930959808993 -0.05280113614736581" rpy="0 0 0"/>
+    <mass value="0.02302342374104796"/>
+    <inertia ixx="9e-06" iyy="1.4e-05" izz="7e-06" ixy="-0.0" iyz="0.0" ixz="2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.053798 -0.002786 0.126714" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Femur__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.053798 -0.002786 0.126714" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Femur__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Femur__2__1">
+  <inertial>
+    <origin xyz="0.05000013244517007 0.010989309598089504 -0.018999520697242166" rpy="0 0 0"/>
+    <mass value="0.02302342374104796"/>
+    <inertia ixx="5e-06" iyy="1.4e-05" izz="1e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.098517 -0.002786 0.011659" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Femur__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.098517 -0.002786 0.011659" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Femur__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Tibia__5__1">
+  <inertial>
+    <origin xyz="-0.0009218855506323564 -0.03197242771014009 0.02105715717094631" rpy="0 0 0"/>
+    <mass value="0.07242936236987811"/>
+    <inertia ixx="8.4e-05" iyy="1.2e-05" izz="8.1e-05" ixy="-1e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.245483 -0.002786 0.051259" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Tibia__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="0.245483 -0.002786 0.051259" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Tibia__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Tibia__3__1">
+  <inertial>
+    <origin xyz="-0.018696308194575947 -0.03197242771013894 0.009729933485388115" rpy="0 0 0"/>
+    <mass value="0.07242936236987811"/>
+    <inertia ixx="8.2e-05" iyy="1.2e-05" izz="8.3e-05" ixy="-0.0" iyz="-1e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.11647 -0.002786 0.233116" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Tibia__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="0.11647 -0.002786 0.233116" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Tibia__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Tibia__4__1">
+  <inertial>
+    <origin xyz="-0.017774574194482445 -0.03197242771014097 -0.011326744486193502" rpy="0 0 0"/>
+    <mass value="0.07242936236987811"/>
+    <inertia ixx="8.2e-05" iyy="1.2e-05" izz="8.3e-05" ixy="1e-06" iyz="-1e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.10553 -0.002786 0.212316" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Tibia__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.10553 -0.002786 0.212316" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Tibia__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Tibia__2__1">
+  <inertial>
+    <origin xyz="0.0009215824495506231 -0.031972427710139716 -0.021056198772232727" rpy="0 0 0"/>
+    <mass value="0.07242936236987811"/>
+    <inertia ixx="8.4e-05" iyy="1.2e-05" izz="8.1e-05" ixy="1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.198517 -0.002786 0.009659" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Tibia__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.198517 -0.002786 0.009659" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Tibia__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Tibia__1__1">
+  <inertial>
+    <origin xyz="0.01865690897846689 -0.031972427710124596 -0.009804976119725611" rpy="0 0 0"/>
+    <mass value="0.07242936236987811"/>
+    <inertia ixx="8.2e-05" iyy="1.2e-05" izz="8.3e-05" ixy="0.0" iyz="1e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.070041 -0.002786 -0.171984" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Tibia__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.070041 -0.002786 -0.171984" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Tibia__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="_Tibia_1">
+  <inertial>
+    <origin xyz="0.017774271093425914 -0.0319724277101257 0.011326702884919576" rpy="0 0 0"/>
+    <mass value="0.07242936236987811"/>
+    <inertia ixx="8.2e-05" iyy="1.2e-05" izz="8.3e-05" ixy="-1e-06" iyz="1e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.152496 -0.002686 -0.151399" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Tibia_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="_"/>
+  </visual>
+  <collision>
+    <origin xyz="0.152496 -0.002686 -0.151399" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hapthexa_description/meshes/_Tibia_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="rev1" type="continuous">
+  <origin xyz="0.016517 0.026286 -0.099741" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="_Coxa__4__1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="rev2" type="continuous">
+  <origin xyz="0.056517 0.026286 -0.030459" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="_Coxa__2__1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="rev3" type="continuous">
+  <origin xyz="0.016517 0.026286 0.038824" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="_Coxa__1__1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="rev4" type="continuous">
+  <origin xyz="-0.063483 0.026286 0.038824" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="_Coxa_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="rev5" type="continuous">
+  <origin xyz="-0.103483 0.026286 -0.030459" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="_Coxa__5__1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="rev6" type="continuous">
+  <origin xyz="-0.063483 0.026286 -0.099741" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="_Coxa__3__1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="rev7" type="continuous">
+  <origin xyz="0.004903 -0.0235 0.045753" rpy="0 0 0"/>
+  <parent link="_Coxa__1__1"/>
+  <child link="_Femur__1__1"/>
+  <axis xyz="-0.864003 -0.0 0.503487"/>
+</joint>
+
+<joint name="rev8" type="continuous">
+  <origin xyz="-0.037281 -0.0236 0.026973" rpy="0 0 0"/>
+  <parent link="_Coxa_1"/>
+  <child link="_Femur_1"/>
+  <axis xyz="-0.866025 0.0 -0.5"/>
+</joint>
+
+<joint name="rev9" type="continuous">
+  <origin xyz="-0.042 -0.0235 -0.0188" rpy="0 0 0"/>
+  <parent link="_Coxa__5__1"/>
+  <child link="_Femur__5__1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="rev10" type="continuous">
+  <origin xyz="-0.004719 -0.0235 -0.045773" rpy="0 0 0"/>
+  <parent link="_Coxa__3__1"/>
+  <child link="_Femur__3__1"/>
+  <axis xyz="0.866025 -0.0 -0.5"/>
+</joint>
+
+<joint name="rev11" type="continuous">
+  <origin xyz="0.037281 -0.0235 -0.026973" rpy="0 0 0"/>
+  <parent link="_Coxa__4__1"/>
+  <child link="_Femur__4__1"/>
+  <axis xyz="0.866025 0.0 0.5"/>
+</joint>
+
+<joint name="rev12" type="continuous">
+  <origin xyz="0.042 -0.0235 0.0188" rpy="0 0 0"/>
+  <parent link="_Coxa__2__1"/>
+  <child link="_Femur__2__1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="rev13" type="continuous">
+  <origin xyz="-0.1 0.0 -0.002" rpy="0 0 0"/>
+  <parent link="_Femur__5__1"/>
+  <child link="_Tibia__5__1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="rev14" type="continuous">
+  <origin xyz="-0.048268 0.0 -0.087602" rpy="0 0 0"/>
+  <parent link="_Femur__3__1"/>
+  <child link="_Tibia__3__1"/>
+  <axis xyz="-0.866025 0.0 0.5"/>
+</joint>
+
+<joint name="rev15" type="continuous">
+  <origin xyz="0.051732 0.0 -0.085602" rpy="0 0 0"/>
+  <parent link="_Femur__4__1"/>
+  <child link="_Tibia__4__1"/>
+  <axis xyz="-0.866025 -0.0 -0.5"/>
+</joint>
+
+<joint name="rev16" type="continuous">
+  <origin xyz="0.1 0.0 0.002" rpy="0 0 0"/>
+  <parent link="_Femur__2__1"/>
+  <child link="_Tibia__2__1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="rev17" type="continuous">
+  <origin xyz="0.048621 0.0 0.087407" rpy="0 0 0"/>
+  <parent link="_Femur__1__1"/>
+  <child link="_Tibia__1__1"/>
+  <axis xyz="0.864003 0.0 -0.503487"/>
+</joint>
+
+<joint name="rev18" type="continuous">
+  <origin xyz="-0.051732 0.0 0.085602" rpy="0 0 0"/>
+  <parent link="_Femur_1"/>
+  <child link="_Tibia_1"/>
+  <axis xyz="0.866025 -0.0 0.5"/>
+</joint>
+
+</robot>
